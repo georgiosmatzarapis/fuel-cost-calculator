@@ -9,7 +9,7 @@ def main():
     distanceInKm, literPriceInEuros, fuelEfficiencyInLiters = 0, 0, 0
 
     while(distanceInKm <= 0):
-        strDistanceInKm = input("Enter the distance of the route in kilometers(km):\n")
+        strDistanceInKm = input(f"{Console.OKBLUE}Enter the distance of the route in kilometers(km):{Console.ENDC}\n")
 
         if not strDistanceInKm:
             continue
@@ -24,7 +24,7 @@ def main():
                 print(f"{Utilities.invalidInputMessage}\n")
 
     while(literPriceInEuros <= 0):
-        strLiterPriceInEuros = input("\nEnter the price of the liter in euros(€):\n")
+        strLiterPriceInEuros = input(f"\n{Console.OKBLUE}Enter the price of the liter in euros(€):{Console.ENDC}\n")
 
         if not strLiterPriceInEuros:
             continue
@@ -39,7 +39,7 @@ def main():
                 print(f"{Utilities.invalidInputMessage}\n")
 
     while(fuelEfficiencyInLiters <= 0):
-        strFuelEfficiencyInLiters = input("\nEnter the fuel efficiency (lt/100 km):\n")
+        strFuelEfficiencyInLiters = input(f"\n{Console.OKBLUE}Enter the fuel efficiency (lt/100 km):{Console.ENDC}\n")
 
         if not strFuelEfficiencyInLiters:
             continue
